@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-2
+  name: myapp-3
 spec:
   selector:
     matchLabels:
-      app: myapp-2
+      app: myapp-3
   replicas: 6
   template:
     metadata:
       labels:
-        app: myapp-2
+        app: myapp-3
     spec:
       containers:
-      - name: myapp-2
-        image: docker.io/nanajanashia/argocd-app:1.1
+      - name: myapp-3
+        image: image-registry.openshift-image-registry.svc:5000/devops/poc-devops:latest
         ports:
         - containerPort: 8080
