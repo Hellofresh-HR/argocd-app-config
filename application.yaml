@@ -7,12 +7,12 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/aymanlinuxBoy/argocd-app-config.git
+    repoURL: https://github.com/Hellofresh-HR/argocd-app-config.git
     targetRevision: HEAD
     path: dev
   destination: 
     server: https://api.stgocp.mwanitest.local:6443
-    namespace: dev
+    namespace: uat
 
   syncPolicy:
     syncOptions:
